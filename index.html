@@ -402,6 +402,55 @@
        </tbody>
       </table>
      </div>
+<!-- Elements Affecting Prompt Quality -->
+        <div class="mt-10 card p-6">
+         
+         <div class="grid grid-cols-3 gap-4">
+          <div class="text-center p-3 bg-white bg-opacity-10 rounded-lg">
+           <i class="fas fa-robot text-2xl text-blue-300 mb-2">
+           </i>
+           <h4 class="font-bold">
+            النموذج المستخدم
+           </h4>
+          </div>
+          <div class="text-center p-3 bg-white bg-opacity-10 rounded-lg">
+           <i class="fas fa-keyboard text-2xl text-blue-300 mb-2">
+           </i>
+           <h4 class="font-bold">
+            اختيار الكلمات
+           </h4>
+          </div>
+          <div class="text-center p-3 bg-white bg-opacity-10 rounded-lg">
+           <i class="fas fa-comment-dots text-2xl text-blue-300 mb-2">
+           </i>
+           <h4 class="font-bold">
+            الأسلوب والنبرة
+           </h4>
+          </div>
+          <div class="text-center p-3 bg-white bg-opacity-10 rounded-lg">
+           <i class="fas fa-sitemap text-2xl text-blue-300 mb-2">
+           </i>
+           <h4 class="font-bold">
+            البنية
+           </h4>
+          </div>
+          <div class="text-center p-3 bg-white bg-opacity-10 rounded-lg">
+           <i class="fas fa-project-diagram text-2xl text-blue-300 mb-2">
+           </i>
+           <h4 class="font-bold">
+            السياق
+           </h4>
+          </div>
+          <div class="text-center p-3 bg-white bg-opacity-10 rounded-lg">
+           <i class="fas fa-sliders-h text-2xl text-blue-300 mb-2">
+           </i>
+           <h4 class="font-bold">
+            إعدادات النموذج
+           </h4>
+          </div>
+         </div>
+        </div>
+        <!-- Footer Note -->
      <div class="warning-box mt-6">
       <h4 class="font-bold">
        ملاحظة مهمة
@@ -413,7 +462,11 @@
     </div>
     <!-- اختبار القسم الأول -->
     <div class="bg-white rounded-lg shadow-md p-6">
-     <h3 class="text-2xl font-bold mb-4">
+     <div class="course-slide mt-8 mb-8">
+      <div class="slide">
+       <div class="slide-content">
+        
+    <h3 class="text-2xl font-bold mb-4">
       اختبار مهارات القسم الأول
      </h3>
      <div class="question-card p-4">
@@ -535,6 +588,13 @@
      </button>
     </div>
    </section>
+        
+        
+        </div>
+       </div>
+      </div>
+     </div>
+    
    <!-- القسم الثاني: إعدادات مخرجات نماذج اللغة الكبيرة -->
    <section class="course-section mt-16" id="llm-config">
     <h2 class="text-3xl font-bold text-primary mb-6">
@@ -1378,7 +1438,189 @@ top_p: 0.9 =&gt; [سيأخذ الكلمات التي تشكل معًا 90% من 
     <h2 class="text-3xl font-bold text-primary mb-6">
      القسم الرابع: هندسة أوامر البرمجة
     </h2>
+
+
+
     <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+
+
+<body>
+    <div class="slide">
+        <div class="slide-content">
+            <!-- Title -->
+            
+            
+            <!-- Brief Introduction -->
+            <div class="text-center mb-6">
+                <p class="text-lg">استخدام نماذج اللغة الكبيرة في مهام البرمجة المختلفة بأوامر فعالة</p>
+            </div>
+            
+            <!-- Programming Tasks Grid -->
+            <div class="grid grid-cols-3 gap-6 mb-6">
+                <!-- Code Writing -->
+                <div class="card p-4">
+                    <div class="flex items-center mb-3">
+                        <div class="task-icon bg-blue-800 text-blue-300">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">كتابة الكود</h3>
+                    </div>
+                    <p class="text-sm mb-2">توليد شيفرات برمجية استنادًا إلى متطلبات محددة</p>
+                    <div class="prompt-pattern text-xs">
+                        <span class="keyword">اكتب دالة</span> بلغة [اللغة] تقوم بـ [الوظيفة]<br>
+                        <span class="comment">// حدد المُدخلات والمُخرجات والشروط والأمثلة</span>
+                    </div>
+                </div>
+                
+                <!-- Code Explanation -->
+                <div class="card p-4">
+                    <div class="flex items-center mb-3">
+                        <div class="task-icon bg-green-800 text-green-300">
+                            <i class="fas fa-comment-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">شرح الكود</h3>
+                    </div>
+                    <p class="text-sm mb-2">تفسير التعليمات البرمجية وآلية عملها</p>
+                    <div class="prompt-pattern text-xs">
+                        <span class="keyword">اشرح</span> الكود التالي <span class="keyword">سطرًا بسطر</span><br>
+                        <span class="keyword">وضح</span> [مفهوم محدد] في السطر [رقم السطر]<br>
+                        <span class="comment">// أضف مستوى الخبرة المستهدف</span>
+                    </div>
+                </div>
+                
+                <!-- Code Translation -->
+                <div class="card p-4">
+                    <div class="flex items-center mb-3">
+                        <div class="task-icon bg-purple-800 text-purple-300">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">ترجمة الكود</h3>
+                    </div>
+                    <p class="text-sm mb-2">تحويل الكود من لغة برمجة إلى أخرى</p>
+                    <div class="prompt-pattern text-xs">
+                        <span class="keyword">حول</span> الكود التالي من [لغة المصدر] إلى [لغة الهدف]<br>
+                        <span class="keyword">حافظ على</span> نفس الوظائف والكفاءة<br>
+                        <span class="keyword">استخدم</span> أفضل الممارسات في [لغة الهدف]
+                    </div>
+                </div>
+                
+                <!-- Error Correction -->
+                <div class="card p-4">
+                    <div class="flex items-center mb-3">
+                        <div class="task-icon bg-red-800 text-red-300">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">تصحيح الأخطاء</h3>
+                    </div>
+                    <p class="text-sm mb-2">تحديد وإصلاح الأخطاء البرمجية</p>
+                    <div class="prompt-pattern text-xs">
+                        <span class="keyword">صحح</span> الأخطاء في الكود التالي<br>
+                        <span class="keyword">أنا أحصل على</span> [رسالة الخطأ]<br>
+                        <span class="keyword">أتوقع أن</span> [السلوك المتوقع]<br>
+                        <span class="keyword">اشرح</span> سبب الخطأ والحل
+                    </div>
+                </div>
+                
+                <!-- Performance Improvement -->
+                <div class="card p-4">
+                    <div class="flex items-center mb-3">
+                        <div class="task-icon bg-yellow-800 text-yellow-300">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">تحسين الأداء</h3>
+                    </div>
+                    <p class="text-sm mb-2">تحسين كفاءة وأداء الكود</p>
+                    <div class="prompt-pattern text-xs">
+                        <span class="keyword">حسن</span> أداء الكود التالي<br>
+                        <span class="keyword">ركز على</span> [المسألة]: استهلاك الذاكرة/وقت التنفيذ<br>
+                        <span class="keyword">حافظ على</span> الوظائف والقراءة
+                    </div>
+                </div>
+                
+                <!-- Code Review -->
+                <div class="card p-4">
+                    <div class="flex items-center mb-3">
+                        <div class="task-icon bg-indigo-800 text-indigo-300">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">مراجعة الكود</h3>
+                    </div>
+                    <p class="text-sm mb-2">تقييم جودة الكود واقتراح تحسينات</p>
+                    <div class="prompt-pattern text-xs">
+                        <span class="keyword">راجع</span> الكود التالي<br>
+                        <span class="keyword">حدد</span> المشاكل المحتملة في الأمان/الصيانة/الكفاءة<br>
+                        <span class="keyword">اقترح</span> تحسينات حسب أفضل الممارسات
+                    </div>
+                </div>
+            </div>
+            
+           
+            
+            <!-- Best Practices -->
+            <div class="card p-4">
+                <h3 class="text-xl font-bold mb-3 text-center">أفضل ممارسات هندسة أوامر البرمجة</h3>
+                
+                <div class="grid grid-cols-3 gap-4 text-center">
+                    <div class="p-3 bg-white bg-opacity-10 rounded-lg">
+                        <i class="fas fa-list-ul text-xl text-blue-300 mb-2"></i>
+                        <h4 class="font-bold text-sm">كن محددًا في المتطلبات</h4>
+                    </div>
+                    <div class="p-3 bg-white bg-opacity-10 rounded-lg">
+                        <i class="fas fa-code-branch text-xl text-blue-300 mb-2"></i>
+                        <h4 class="font-bold text-sm">حدد هيكل الكود المطلوب</h4>
+                    </div>
+                    <div class="p-3 bg-white bg-opacity-10 rounded-lg">
+                        <i class="fas fa-check-circle text-xl text-blue-300 mb-2"></i>
+                        <h4 class="font-bold text-sm">اطلب التحقق من صحة المدخلات</h4>
+                    </div>
+                    <div class="p-3 bg-white bg-opacity-10 rounded-lg">
+                        <i class="fas fa-exclamation-triangle text-xl text-blue-300 mb-2"></i>
+                        <h4 class="font-bold text-sm">اطلب معالجة حالات الخطأ</h4>
+                    </div>
+                    <div class="p-3 bg-white bg-opacity-10 rounded-lg">
+                        <i class="fas fa-comment text-xl text-blue-300 mb-2"></i>
+                        <h4 class="font-bold text-sm">اطلب تعليقات توضيحية</h4>
+                    </div>
+                    <div class="p-3 bg-white bg-opacity-10 rounded-lg">
+                        <i class="fas fa-eye text-xl text-blue-300 mb-2"></i>
+                        <h4 class="font-bold text-sm">راجع الكود دائمًا</h4>
+                    </div>
+                </div>
+                
+                <div class="mt-3 p-3 bg-red-900 bg-opacity-20 rounded-lg">
+                    <p class="text-sm"><i class="fas fa-exclamation-circle text-red-300 ml-2"></i> تذكر دائمًا: تحقق من صحة الكود المُنتج - قد تحدث أخطاء غير متوقعة حتى في أفضل نماذج الذكاء الاصطناعي</p>
+                </div>
+            </div>
+            
+            <!-- Visual Process Diagram -->
+            <div style="display: none;">
+                <div class="mermaid-container" style="height: 120px;">
+                    <div class="mermaid">
+                        graph LR
+                        A[تحديد المتطلبات] --> B[هندسة الأمر البرمجي] --> C[توليد الكود] --> D[مراجعة وتحسين]
+                        style A fill:#1e3c72,stroke:#ccc,color:#fff
+                        style B fill:#2a5298,stroke:#ccc,color:#fff
+                        style C fill:#1e3c72,stroke:#ccc,color:#fff
+                        style D fill:#2a5298,stroke:#ccc,color:#fff
+                    </div>
+                </div>
+            </div>
+            
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    mermaid.initialize({
+                        startOnLoad: true,
+                        theme: 'dark',
+                        securityLevel: 'loose',
+                    });
+                });
+            </script>
+        </div>
+    </div>
+</body>
+
+
+
      <h3 class="text-2xl font-bold mb-4">
       استخدام نماذج اللغة في مهام البرمجة
      </h3>
@@ -2055,6 +2297,7 @@ def handler(request):
     </div>
    </section>
    <!-- القسم الخامس: هندسة الأوامر متعددة الوسائط -->
+
    <section class="course-section mt-16" id="multimodal">
     <h2 class="text-3xl font-bold text-primary mb-6">
      القسم الخامس: هندسة الأوامر متعددة الوسائط
@@ -2074,6 +2317,28 @@ def handler(request):
        عند العمل مع نماذج متعددة الوسائط، يجب التحقق أولاً من أنواع المدخلات التي يدعمها النموذج المستخدم، حيث تختلف النماذج في قدراتها على معالجة أنواع الوسائط المختلفة.
       </p>
      </div>
+<!-- Multimodal Visualization -->
+            <div class="multimodal-container">
+                <div class="media-type text">
+                    <i class="fas fa-font"></i>
+                    <span>نص</span>
+                </div>
+                <div class="connection-line"></div>
+                <div class="media-type image">
+                    <i class="fas fa-image"></i>
+                    <span>صورة</span>
+                </div>
+                <div class="connection-line"></div>
+                <div class="media-type audio">
+                    <i class="fas fa-volume-up"></i>
+                    <span>صوت</span>
+                </div>
+                <div class="connection-line"></div>
+                <div class="media-type video">
+                    <i class="fas fa-video"></i>
+                    <span>فيديو</span>
+                </div>
+            </div>
      <h4 class="text-xl font-semibold mb-3">
       أنواع النماذج متعددة الوسائط
      </h4>
@@ -2155,6 +2420,140 @@ def handler(request):
        </tbody>
       </table>
      </div>
+ <div class="slide">
+        <div class="slide-content">
+            <!-- Title -->
+            
+            
+                        
+            <!-- Main Content Grid -->
+            <div class="grid grid-cols-2 gap-6 mt-6">
+                <!-- Left Column -->
+                <div>
+                    <!-- Best Practices -->
+                    <div class="card p-4 mb-6">
+                        <h2 class="text-2xl font-bold mb-3 flex items-center">
+                            <i class="fas fa-star text-yellow-300 ml-2"></i>
+                            أفضل ممارسات التوجيه متعدد الوسائط
+                        </h2>
+                        <ul class="list-disc list-inside space-y-2 text-sm">
+                            <li>كن محددًا عند الإشارة إلى أجزاء معينة من الصورة</li>
+                            <li>استخدم وصفًا تفصيليًا للمناطق المهمة في الوسائط</li>
+                            <li>قسّم الأوامر المعقدة إلى خطوات أصغر</li>
+                            <li>حدد المخرجات المطلوبة بدقة (تحليل، وصف، تحرير)</li>
+                            <li>وضّح العلاقة المطلوبة بين الوسائط المختلفة</li>
+                            <li>خذ بعين الاعتبار محدودية النماذج في فهم التفاصيل الدقيقة</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Challenges -->
+                    <div class="card p-4">
+                        <h2 class="text-2xl font-bold mb-3 flex items-center">
+                            <i class="fas fa-exclamation-triangle text-red-300 ml-2"></i>
+                            تحديات التوجيه متعدد الوسائط
+                        </h2>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="p-3 bg-white bg-opacity-10 rounded">
+                                <h4 class="font-bold text-sm flex items-center">
+                                    <i class="fas fa-search mr-1 text-red-300"></i>
+                                    فهم التفاصيل الدقيقة
+                                </h4>
+                                <p class="text-xs mt-1">النماذج قد تفتقد تفاصيل دقيقة في الوسائط غير النصية</p>
+                            </div>
+                            <div class="p-3 bg-white bg-opacity-10 rounded">
+                                <h4 class="font-bold text-sm flex items-center">
+                                    <i class="fas fa-random mr-1 text-red-300"></i>
+                                    التقاط العلاقات المعقدة
+                                </h4>
+                                <p class="text-xs mt-1">صعوبة فهم العلاقات المتداخلة بين عناصر مختلفة</p>
+                            </div>
+                            <div class="p-3 bg-white bg-opacity-10 rounded">
+                                <h4 class="font-bold text-sm flex items-center">
+                                    <i class="fas fa-clock mr-1 text-red-300"></i>
+                                    السياق الزمني
+                                </h4>
+                                <p class="text-xs mt-1">صعوبة تتبع التسلسل الزمني في الوسائط المتحركة</p>
+                            </div>
+                            <div class="p-3 bg-white bg-opacity-10 rounded">
+                                <h4 class="font-bold text-sm flex items-center">
+                                    <i class="fas fa-language mr-1 text-red-300"></i>
+                                    اللغة والثقافة
+                                </h4>
+                                <p class="text-xs mt-1">تحديات فهم العناصر الثقافية واللغوية المتداخلة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column -->
+                <div>
+                    <!-- Application Domains -->
+                    <div class="card p-4 mb-6">
+                        <h2 class="text-2xl font-bold mb-3 flex items-center">
+                            <i class="fas fa-map text-green-300 ml-2"></i>
+                            مجالات التطبيق
+                        </h2>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center p-3 bg-white bg-opacity-10 rounded-lg">
+                                <i class="fas fa-hospital text-3xl text-blue-300 mb-2"></i>
+                                <h4 class="font-bold">الرعاية الصحية</h4>
+                                <p class="text-xs mt-1">تحليل الصور الطبية وملاحظات المرضى</p>
+                            </div>
+                            <div class="text-center p-3 bg-white bg-opacity-10 rounded-lg">
+                                <i class="fas fa-shopping-cart text-3xl text-blue-300 mb-2"></i>
+                                <h4 class="font-bold">التجارة الإلكترونية</h4>
+                                <p class="text-xs mt-1">البحث المرئي وتوصيات المنتجات</p>
+                            </div>
+                            <div class="text-center p-3 bg-white bg-opacity-10 rounded-lg">
+                                <i class="fas fa-graduation-cap text-3xl text-blue-300 mb-2"></i>
+                                <h4 class="font-bold">التعليم</h4>
+                                <p class="text-xs mt-1">شروحات مرئية وتفاعلية</p>
+                            </div>
+                            <div class="text-center p-3 bg-white bg-opacity-10 rounded-lg">
+                                <i class="fas fa-paint-brush text-3xl text-blue-300 mb-2"></i>
+                                <h4 class="font-bold">التصميم الإبداعي</h4>
+                                <p class="text-xs mt-1">توليد وتعديل المحتوى البصري</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Example Prompts -->
+                    <div class="card p-4">
+                        <h2 class="text-2xl font-bold mb-3 flex items-center">
+                            <i class="fas fa-lightbulb text-yellow-300 ml-2"></i>
+                            أمثلة على أوامر متعددة الوسائط
+                        </h2>
+                        
+                        <div class="example-prompt mb-3">
+                            <div class="text-blue-300 font-bold mb-1">تحليل صورة طبية:</div>
+                            <span class="text-xs">
+                                حلل هذه الصورة الشعاعية للصدر وحدد أي علامات محتملة لـ <i class="icon-gradient fas fa-lungs"></i> الالتهاب الرئوي أو المشاكل الأخرى. قارن النتائج مع الأعراض المذكورة: حمى، سعال، وضيق في التنفس.
+                            </span>
+                        </div>
+                        
+                        <div class="example-prompt mb-3">
+                            <div class="text-blue-300 font-bold mb-1">تحرير منتج:</div>
+                            <span class="text-xs">
+                                استنادًا إلى صورة هذا المنتج <i class="icon-gradient fas fa-tshirt"></i>، أنشئ وصفًا إعلانيًا جذابًا يركز على المميزات البارزة، وأضف 3 نقاط بيع فريدة واقترح تعديلات لتحسين الصورة.
+                            </span>
+                        </div>
+                        
+                        <div class="example-prompt">
+                            <div class="text-blue-300 font-bold mb-1">تحليل مقطع فيديو:</div>
+                            <span class="text-xs">
+                                شاهد مقطع الفيديو هذا <i class="icon-gradient fas fa-video"></i> وحلل: (1) الرسالة الرئيسية (2) التقنيات البصرية المستخدمة (3) تأثير الموسيقى على المشاهد. قدم تلخيصًا شاملًا مع توصيات للتحسين.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Note -->
+            <div class="mt-8 text-center text-sm text-gray-300">
+                <p>كلما كانت تعليماتك أكثر وضوحًا وتحديدًا، كلما كانت مخرجات النموذج متعدد الوسائط أكثر دقة وفائدة</p>
+            </div>
+        </div>
+    </div>
      <h4 class="text-xl font-semibold mb-3">
       أفضل الممارسات لهندسة الأوامر متعددة الوسائط
      </h4>
@@ -3419,6 +3818,153 @@ MOVIE REVIEWS: {
        </button>
       </div>
      </section>
+
+<div class="slide">
+        <div class="slide-content">
+            <!-- Title -->
+            <header class="mb-4">
+                <h1 class="text-4xl font-bold tracking-wider text-center mb-2">أفضل الممارسات في هندسة الأوامر</h1>
+                <div class="section-divider"></div>
+            </header>
+            
+            <!-- Main Content -->
+            <div class="grid grid-cols-3 gap-5">
+                <!-- Practice 1 -->
+                <div class="card p-4 practice-card">
+                    <div class="practice-icon bg-blue-900 text-blue-300">
+                        <i class="fas fa-clone"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-center mb-2">تقديم أمثلة</h3>
+                    <p class="text-sm text-center mb-3">استخدام تقنيات one-shot أو few-shot لإظهار النمط المطلوب</p>
+                    <div class="mt-auto text-center">
+                        <span class="badge badge-blue">صياغة أفضل</span>
+                    </div>
+                </div>
+                
+                <!-- Practice 2 -->
+                <div class="card p-4 practice-card">
+                    <div class="practice-icon bg-green-900 text-green-300">
+                        <i class="fas fa-feather-alt"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-center mb-2">البساطة والوضوح</h3>
+                    <p class="text-sm text-center mb-3">استخدام لغة واضحة ومباشرة تجنباً للغموض</p>
+                    <div class="mt-auto text-center">
+                        <span class="badge badge-green">كفاءة أعلى</span>
+                    </div>
+                </div>
+                
+                <!-- Practice 3 -->
+                <div class="card p-4 practice-card">
+                    <div class="practice-icon bg-purple-900 text-purple-300">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-center mb-2">تحديد المخرجات بدقة</h3>
+                    <p class="text-sm text-center mb-3">وصف دقيق للتنسيق والمحتوى والطول المطلوب</p>
+                    <div class="mt-auto text-center">
+                        <span class="badge badge-pink">دقة أعلى</span>
+                    </div>
+                </div>
+                
+                <!-- Practice 4 -->
+                <div class="card p-4 practice-card">
+                    <div class="practice-icon bg-yellow-800 text-yellow-300">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-center mb-2">التعليمات الإيجابية</h3>
+                    <p class="text-sm text-center mb-3">التركيز على ما يجب فعله بدلاً من ما لا يجب فعله</p>
+                    <div class="mt-auto text-center">
+                        <span class="badge badge-amber">توجيه أفضل</span>
+                    </div>
+                </div>
+                
+                <!-- Practice 5 -->
+                <div class="card p-4 practice-card">
+                    <div class="practice-icon bg-blue-800 text-blue-300">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-center mb-2">إدارة الرموز (Tokens)</h3>
+                    <p class="text-sm text-center mb-3">الاستفادة المثلى من عدد الرموز المتاحة وتوزيعها بكفاءة</p>
+                    <div class="mt-auto text-center">
+                        <span class="badge badge-blue">توفير التكلفة</span>
+                    </div>
+                </div>
+                
+                <!-- Practice 6 -->
+                <div class="card p-4 practice-card">
+                    <div class="practice-icon bg-indigo-800 text-indigo-300">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-center mb-2">استخدام المتغيرات</h3>
+                    <p class="text-sm text-center mb-3">تصميم قوالب قابلة لإعادة الاستخدام مع متغيرات قابلة للتغيير</p>
+                    <div class="mt-auto text-center">
+                        <span class="badge badge-pink">قابلية التوسع</span>
+                    </div>
+                </div>
+                
+                <!-- Practice 7 -->
+                <div class="card p-4 practice-card">
+                    <div class="practice-icon bg-green-800 text-green-300">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-center mb-2">تجريب الصيغ</h3>
+                    <p class="text-sm text-center mb-3">تجربة أشكال وأساليب مختلفة من المخرجات والاستجابات</p>
+                    <div class="mt-auto text-center">
+                        <span class="badge badge-green">تحسين مستمر</span>
+                    </div>
+                </div>
+                
+                <!-- Practice 8 -->
+                <div class="card p-4 practice-card">
+                    <div class="practice-icon bg-red-800 text-red-300">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-center mb-2">توثيق المحاولات</h3>
+                    <p class="text-sm text-center mb-3">تسجيل الأوامر الناجحة والفاشلة والدروس المستفادة</p>
+                    <div class="mt-auto text-center">
+                        <span class="badge badge-amber">تراكم الخبرات</span>
+                    </div>
+                </div>
+                
+                <!-- Practice 9 -->
+                <div class="card p-4 practice-card">
+                    <div class="practice-icon bg-yellow-800 text-yellow-300">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-center mb-2">تقنية سلسلة التفكير</h3>
+                    <p class="text-sm text-center mb-3">توجيه النموذج للتفكير خطوة بخطوة قبل الإجابة النهائية</p>
+                    <div class="mt-auto text-center">
+                        <span class="badge badge-blue">دقة منطقية</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Before & After Example -->
+            <div class="card p-4 mt-6">
+                <h3 class="text-xl font-bold mb-3 text-center">مثال قبل وبعد تطبيق أفضل الممارسات</h3>
+                
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="example-box example-before">
+                        <div class="font-bold text-red-300 mb-2">✖️ أمر قبل التحسين:</div>
+                        <p>اكتب مقال عن التغير المناخي.</p>
+                    </div>
+                    
+                    <div class="example-box example-after">
+                        <div class="font-bold text-green-300 mb-2">✓ أمر بعد التحسين:</div>
+                        <p>اكتب مقالًا من 500 كلمة عن تأثير التغير المناخي على الزراعة في الشرق الأوسط خلال العشرين سنة القادمة. ضمّن 3-4 تحديات رئيسية و2-3 حلول مقترحة. استهدف جمهورًا من المزارعين والمهتمين بالاستدامة البيئية. قدم النص بأسلوب علمي مبسط مع إدراج بعض الإحصائيات الداعمة.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Reference -->
+            <div class="mt-4">
+                <p class="text-center text-sm italic">
+                    <i class="fas fa-lightbulb text-yellow-300 ml-1"></i>
+                    تذكر دائمًا: هندسة الأوامر عملية تكرارية تتطلب التجربة والممارسة والتحسين المستمر
+                </p>
+            </div>
+        </div>
+    </div>
+
      <!-- نشاط عملي -->
      <section class="mb-12 bg-white rounded-lg shadow-md p-6">
       <h2 class="text-2xl font-bold mb-4 section-title">
